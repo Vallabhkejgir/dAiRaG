@@ -1,0 +1,54 @@
+services:
+  - type: web
+    name: dairag
+    runtime: image
+    plan: starter
+    region: singapore
+    numInstances: 1
+    healthCheckPath: /api/health
+    image:
+      url: docker.io/parag3/dairag-app:prod
+      # For a private image, first create a registry credential in Render,
+      # then uncomment this block and replace the credential name.
+      # creds:
+      #   fromRegistryCreds:
+      #     name: dockerhub-creds
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: DAIRAG_SERVE_FRONTEND
+        value: "true"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_API_GW_KEY
+        sync: false
+      - key: GEMINI_AUTHORIZATION
+        sync: false
+      - key: GEMINI_PROVIDER
+        value: openai
+      - key: GEMINI_MODEL
+        value: gpt-4
+      - key: GEMINI_CYPHER_MODEL
+        value: gpt-4
+      - key: GEMINI_ANSWER_MODEL
+        value: gpt-4
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USERNAME
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: NEO4J_DATABASE
+        sync: false
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        value: https://cloud.langfuse.com
+      - key: LANGFUSE_JUDGE_ENABLED
+        value: "true"
+      - key: LANGFUSE_JUDGE_MODEL
+        value: gpt-4

@@ -1,0 +1,12 @@
+.git/
+.vscode/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.log
+**/*.err.log
+**/*.out.log
+.env
+.env.*
+dAiRaG/frontend/node_modules/
+dAiRaG/frontend/dist/

@@ -1,0 +1,14 @@
+# Python backend dependencies for dAiRaG
+# Install with: pip install -r requirements.txt
+#
+# Frontend tooling is managed separately with npm in dAiRaG/frontend:
+# - Node.js 23+
+# - npm 10+
+# - Build command: npm install && npm run build
+
+fastapi==0.121.1
+uvicorn==0.38.0
+pydantic==2.12.4
+neo4j==6.1.0
+python-dotenv==1.2.1
+langfuse==4.0.6
