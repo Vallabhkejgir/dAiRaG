@@ -250,7 +250,7 @@ def runtime_status() -> RuntimeStatus:
             "GEMINI_CYPHER_MODEL",
             os.getenv(
                 "GEMINI_MODEL",
-                "gemini-1.5-flash",
+                "gemini-flash-latest",
             ),
         ),
 

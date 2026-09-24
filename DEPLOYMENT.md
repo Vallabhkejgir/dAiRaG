@@ -71,7 +71,7 @@ Option A: Dashboard
 
 Option B: Blueprint
 
-1. Update [render.yaml](C:/Users/parag/Downloads/dAiRaG/render.yaml) with your real image URL.
+1. Update [render.yaml](render.yaml) with your real image URL.
 2. If the image is private, uncomment the `creds` block and set the Render registry credential name.
 3. Push `render.yaml` to your repo.
 4. In Render, create a new Blueprint from the repo.
@@ -99,11 +99,11 @@ Common fixed values:
 - `DAIRAG_SERVE_FRONTEND=true`
 - `LANGFUSE_HOST=https://cloud.langfuse.com`
 - `LANGFUSE_JUDGE_ENABLED=true`
-- `LANGFUSE_JUDGE_MODEL=gpt-4`
-- `GEMINI_PROVIDER=openai`
-- `GEMINI_MODEL=gpt-4`
-- `GEMINI_CYPHER_MODEL=gpt-4`
-- `GEMINI_ANSWER_MODEL=gpt-4`
+- `LANGFUSE_JUDGE_MODEL=gemini-flash-latest`
+- `GEMINI_PROVIDER=google`
+- `GEMINI_MODEL=gemini-flash-latest`
+- `GEMINI_CYPHER_MODEL=gemini-flash-latest`
+- `GEMINI_ANSWER_MODEL=gemini-flash-latest`
 
 ## Push To A Registry
 
@@ -123,7 +123,7 @@ docker push ghcr.io/<github-username>/dairag-app:prod
 
 ## Notes
 
-- The current two-container [docker-compose.yml](C:/Users/parag/Downloads/dAiRaG/docker-compose.yml) is still useful for local development.
-- [Dockerfile.prod](C:/Users/parag/Downloads/dAiRaG/Dockerfile.prod) is the deployment image for Render and similar platforms.
+- The current two-container [docker-compose.yml](docker-compose.yml) is still useful for local development.
+- [Dockerfile.prod](Dockerfile.prod) is the deployment image for Render and similar platforms.
 - The dataset is not committed to git, so a Git-built Docker deploy on Render will not include it.
 - The production image is the correct deployment artifact because it already packages the required local data.

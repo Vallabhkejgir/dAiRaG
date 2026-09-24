@@ -30,7 +30,7 @@ except ImportError:  # pragma: no cover - optional dependency
     GraphDatabase = None
     Query = None
 
-# DEFAULT_TURING_MODEL = "gemini-1.5-flash"
+# DEFAULT_TURING_MODEL = "gemini-flash-latest"
 # DEFAULT_TURING_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/"
 # DEFAULT_TURING_PROVIDER = "google"
 
