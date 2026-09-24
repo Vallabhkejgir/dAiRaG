@@ -27,7 +27,7 @@ services:
       - key: GEMINI_AUTHORIZATION
         sync: false
       - key: GEMINI_PROVIDER
-        value: openai
+        value: google
       - key: GEMINI_MODEL
         value: gemini-flash-latest
       - key: GEMINI_CYPHER_MODEL

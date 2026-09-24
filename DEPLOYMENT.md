@@ -100,7 +100,7 @@ Common fixed values:
 - `LANGFUSE_HOST=https://cloud.langfuse.com`
 - `LANGFUSE_JUDGE_ENABLED=true`
 - `LANGFUSE_JUDGE_MODEL=gemini-flash-latest`
-- `GEMINI_PROVIDER=openai`
+- `GEMINI_PROVIDER=google`
 - `GEMINI_MODEL=gemini-flash-latest`
 - `GEMINI_CYPHER_MODEL=gemini-flash-latest`
 - `GEMINI_ANSWER_MODEL=gemini-flash-latest`
