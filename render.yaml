@@ -29,11 +29,11 @@ services:
       - key: GEMINI_PROVIDER
         value: openai
       - key: GEMINI_MODEL
-        value: gpt-4
+        value: gemini-flash-latest
       - key: GEMINI_CYPHER_MODEL
-        value: gpt-4
+        value: gemini-flash-latest
       - key: GEMINI_ANSWER_MODEL
-        value: gpt-4
+        value: gemini-flash-latest
       - key: NEO4J_URI
         sync: false
       - key: NEO4J_USERNAME
@@ -51,4 +51,4 @@ services:
       - key: LANGFUSE_JUDGE_ENABLED
         value: "true"
       - key: LANGFUSE_JUDGE_MODEL
-        value: gpt-4
+        value: gemini-flash-latest

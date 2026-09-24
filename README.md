@@ -2,11 +2,6 @@
 
 A graph-grounded SAP Order-to-Cash analytics application that combines Neo4j, a React graph explorer, NL-to-Cypher querying, and Langfuse observability to help users inspect business process data in natural language.
 
-## Live App
-
-- App: https://dairag.onrender.com
-- Health: https://dairag.onrender.com/api/health
-
 ## What dAiRaG Does
 
 - Visualizes the SAP Order-to-Cash flow as an interactive graph.

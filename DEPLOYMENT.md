@@ -99,11 +99,11 @@ Common fixed values:
 - `DAIRAG_SERVE_FRONTEND=true`
 - `LANGFUSE_HOST=https://cloud.langfuse.com`
 - `LANGFUSE_JUDGE_ENABLED=true`
-- `LANGFUSE_JUDGE_MODEL=gpt-4`
+- `LANGFUSE_JUDGE_MODEL=gemini-flash-latest`
 - `GEMINI_PROVIDER=openai`
-- `GEMINI_MODEL=gpt-4`
-- `GEMINI_CYPHER_MODEL=gpt-4`
-- `GEMINI_ANSWER_MODEL=gpt-4`
+- `GEMINI_MODEL=gemini-flash-latest`
+- `GEMINI_CYPHER_MODEL=gemini-flash-latest`
+- `GEMINI_ANSWER_MODEL=gemini-flash-latest`
 
 ## Push To A Registry
 
