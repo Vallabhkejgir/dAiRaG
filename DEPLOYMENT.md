@@ -71,7 +71,7 @@ Option A: Dashboard
 
 Option B: Blueprint
 
-1. Update [render.yaml](C:/Users/parag/Downloads/dAiRaG/render.yaml) with your real image URL.
+1. Update [render.yaml](render.yaml) with your real image URL.
 2. If the image is private, uncomment the `creds` block and set the Render registry credential name.
 3. Push `render.yaml` to your repo.
 4. In Render, create a new Blueprint from the repo.
@@ -123,7 +123,7 @@ docker push ghcr.io/<github-username>/dairag-app:prod
 
 ## Notes
 
-- The current two-container [docker-compose.yml](C:/Users/parag/Downloads/dAiRaG/docker-compose.yml) is still useful for local development.
-- [Dockerfile.prod](C:/Users/parag/Downloads/dAiRaG/Dockerfile.prod) is the deployment image for Render and similar platforms.
+- The current two-container [docker-compose.yml](docker-compose.yml) is still useful for local development.
+- [Dockerfile.prod](Dockerfile.prod) is the deployment image for Render and similar platforms.
 - The dataset is not committed to git, so a Git-built Docker deploy on Render will not include it.
 - The production image is the correct deployment artifact because it already packages the required local data.
